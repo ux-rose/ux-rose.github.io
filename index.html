@@ -155,8 +155,12 @@
 </main>
 
 <footer class="bg-gray-100 text-center py-6 text-gray-1000">
-    <p>© 2025 www.uxrose.com</p>
+    <p>© <span id="current-year">2025</span> www.uxrose.com</p>
 </footer>
+
+<script>
+    document.getElementById('current-year').textContent = new Date().getFullYear();
+</script>
 
 </body>
 </html>
